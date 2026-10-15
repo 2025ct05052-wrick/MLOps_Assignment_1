@@ -7,5 +7,5 @@
   "report_docx": "Passed (10 pages; rendered and visually reviewed in Microsoft Word)",
   "docker": "Passed (Docker Compose build; API /health, /predict, /metrics; Prometheus target UP)",
   "kubernetes": "Passed (Docker Desktop Kind; 2/2 replicas Ready; /health, /predict, and /metrics HTTP 200 verified via kubectl port-forward)",
-  "github_ci": "Passed (GitHub Actions run #1 on commit 258ec97; workflow concluded successfully)"
+  "github_ci": "Passed (recorded GitHub Actions run #3 on commit d04484f; workflow concluded successfully)"
 }

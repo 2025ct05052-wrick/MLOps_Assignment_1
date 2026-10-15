@@ -615,7 +615,7 @@ def build() -> Path:
     add_paragraph(
         document,
         f"Current GitHub Actions status: {verification.get('github_ci', 'Not run')}. "
-        "The completed first run is documented in "
+        "The recorded passing workflow run is documented in "
         "docs/screenshots/github-actions-ci-passed.png.",
     )
 

@@ -472,7 +472,7 @@ def build():
         p("python scripts/train.py --fast", "ReportCode"),
         p(
             f"Current GitHub Actions status: {VERIFICATION.get('github_ci', 'Not run')}. "
-            "The completed first run is documented in "
+            "The recorded passing workflow run is documented in "
             "docs/screenshots/github-actions-ci-passed.png.",
             "ReportSmall",
         ),
