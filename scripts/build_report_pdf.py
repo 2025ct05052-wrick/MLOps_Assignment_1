@@ -472,8 +472,8 @@ def build():
         p("python scripts/train.py --fast", "ReportCode"),
         p(
             f"Current GitHub Actions status: {VERIFICATION.get('github_ci', 'Not run')}. "
-            "Capture the completed first run page as "
-            "docs/screenshots/github-actions-ci-passed.png before submission.",
+            "The completed first run is documented in "
+            "docs/screenshots/github-actions-ci-passed.png.",
             "ReportSmall",
         ),
         PageBreak(),
@@ -496,7 +496,7 @@ def build():
                 ["Observability", "Prometheus target UP; Grafana dashboard", "Passed locally"],
                 ["Kubernetes", "Two ready replicas; endpoints via port-forward", "Passed locally"],
                 ["Public deployment", "No cloud-specific resource is assumed", "Not performed; no public URL"],
-                ["Video and screenshots", "Three runtime screenshots in docs/screenshots", "Short demo video remains"],
+                ["Video and screenshots", "Four evidence screenshots in docs/screenshots", "Short demo video remains"],
             ],
             [1.25 * inch, 2.55 * inch, 2.65 * inch],
         ),
@@ -505,8 +505,8 @@ def build():
         p(
             "Docker Compose and the local Docker Desktop Kind cluster have both been exercised. The "
             "Kubernetes Deployment reached two ready replicas, and /health, /predict, and /metrics were "
-            "verified through port-forwarding. Prometheus, Grafana, and Kubernetes screenshots are included "
-            "in the repository. "
+            "verified through port-forwarding. Prometheus, Grafana, Kubernetes, and GitHub Actions "
+            "screenshots are included in the repository. "
             f"The current GitHub Actions result is {VERIFICATION.get('github_ci', 'not yet run')}. No public "
             "cloud endpoint is claimed; a short demo video and the course submission remain for the student. "
             "The dataset has 303 historical records and is not suitable for diagnosis or health decisions."

@@ -615,8 +615,8 @@ def build() -> Path:
     add_paragraph(
         document,
         f"Current GitHub Actions status: {verification.get('github_ci', 'Not run')}. "
-        "Capture the completed first run page as "
-        "docs/screenshots/github-actions-ci-passed.png before submission.",
+        "The completed first run is documented in "
+        "docs/screenshots/github-actions-ci-passed.png.",
     )
 
     # Page 10: deployment, monitoring, scope, and references.
@@ -638,7 +638,7 @@ def build() -> Path:
             ["Observability", "Prometheus target UP; Grafana dashboard", "Passed locally"],
             ["Kubernetes", "Two ready replicas; endpoints via port-forward", "Passed locally"],
             ["Public deployment", "No cloud-specific resource is assumed", "Not performed; no public URL"],
-            ["Video and screenshots", "Three runtime screenshots in docs/screenshots", "Short demo video remains"],
+            ["Video and screenshots", "Four evidence screenshots in docs/screenshots", "Short demo video remains"],
         ],
         widths=[1.35, 2.7, 2.5],
         font_size=8.1,
@@ -648,7 +648,7 @@ def build() -> Path:
         document,
         "Docker Compose and the local Docker Desktop Kind cluster have both been exercised. The Kubernetes "
         "Deployment reached two ready replicas, and /health, /predict, and /metrics were verified through "
-        "port-forwarding. Prometheus, Grafana, and Kubernetes screenshots are included in the repository. "
+        "port-forwarding. Prometheus, Grafana, Kubernetes, and GitHub Actions screenshots are included. "
         f"The current GitHub Actions result is {verification.get('github_ci', 'not yet run')}. No public "
         "cloud endpoint is claimed; a short demo video and the course submission remain for the student. "
         "The dataset has only 303 historical records, so model metrics should not be used for diagnosis "
