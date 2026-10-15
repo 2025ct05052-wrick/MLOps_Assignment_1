@@ -40,7 +40,7 @@ def build_classifier(model_name: str):
     if model_name == "random_forest":
         return RandomForestClassifier(
             n_estimators=300, min_samples_leaf=2, class_weight="balanced_subsample",
-            n_jobs=-1, random_state=RANDOM_STATE
+            n_jobs=1, random_state=RANDOM_STATE
         )
     raise ValueError(f"Unsupported model: {model_name}")
 

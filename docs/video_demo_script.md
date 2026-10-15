@@ -1,4 +1,6 @@
-# MLOps project screen recording guide
+# Optional live screen-recording guide
+
+The submission video at `reports/MLOps_Assignment_Demo.mp4` is a silent 3:20 visual walkthrough assembled from the project's actual screenshots and current metrics. It is not a capture of live PowerShell execution. Use this longer guide only if you want to create a separate live, narrated recording.
 
 Record one clear 4–5 minute demonstration using real output from this project. Keep the recording continuous, speak in your own words, and use the sample request in `samples/predict.json`; do not show real patient data or invent results.
 

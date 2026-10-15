@@ -97,7 +97,8 @@ def run_training(
             scoring=SCORING,
             refit="roc_auc",
             cv=splitter,
-            n_jobs=-1,
+            # Serial execution avoids fragile worker-process startup on Windows.
+            n_jobs=1,
             return_train_score=False,
         )
         search.fit(x_train, y_train)
@@ -138,6 +139,10 @@ def run_training(
     final_pipeline.fit(features, target)
     model_path = output / "heart_disease_model.joblib"
     joblib.dump(final_pipeline, model_path)
+    try:
+        model_path_for_report = model_path.resolve().relative_to(PROJECT_ROOT.resolve()).as_posix()
+    except ValueError:
+        model_path_for_report = str(model_path)
 
     summary = {
         "generated_at_utc": datetime.now(UTC).isoformat(),
@@ -157,7 +162,7 @@ def run_training(
             {key: value for key, value in row.items() if key != "estimator"}
             for row in results
         ],
-        "model_path": str(model_path),
+        "model_path": model_path_for_report,
     }
     (output / "metrics.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
     (output / "model_metadata.json").write_text(json.dumps({

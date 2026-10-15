@@ -4,6 +4,8 @@ The runtime screenshots were captured from the local Docker Desktop demo:
 
 - `prometheus-target-up.png` — Prometheus reports the API scrape target as UP.
 - `grafana-heart-disease-dashboard.png` — provisioned dashboard with observed API metrics.
+- `mlflow-run-comparison.png` — current Logistic Regression and Random Forest runs
+  compared using mean cross-validation ROC-AUC.
 - `kubernetes-verification.png` — two ready API pods and successful `/health`, `/predict`,
   and `/metrics` checks through `kubectl port-forward`.
 - `github-actions-ci-passed.png` — Playwright capture of GitHub Actions run #4 for commit
