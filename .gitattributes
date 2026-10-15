@@ -1,0 +1,5 @@
+*.docx binary
+*.pdf binary
+*.png binary
+*.joblib binary
+*.zip binary

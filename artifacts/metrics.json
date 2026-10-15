@@ -1,0 +1,80 @@
+{
+  "generated_at_utc": "2026-10-10T18:27:50.322154+00:00",
+  "dataset": {
+    "source_rows": 303,
+    "clean_rows": 303,
+    "feature_count": 13,
+    "training_rows": 242,
+    "holdout_rows": 61,
+    "positive_rate": 0.45874587458745875,
+    "missing_values_before_pipeline": {
+      "age": 0,
+      "sex": 0,
+      "cp": 0,
+      "trestbps": 0,
+      "chol": 0,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 0,
+      "exang": 0,
+      "oldpeak": 0,
+      "slope": 0,
+      "ca": 4,
+      "thal": 2
+    }
+  },
+  "selection_metric": "cv_roc_auc_mean",
+  "selected_model": "logistic_regression",
+  "selected_params": {
+    "classifier__C": 0.3
+  },
+  "models": [
+    {
+      "model_name": "logistic_regression",
+      "best_params": {
+        "classifier__C": 0.3
+      },
+      "cv_metrics": {
+        "cv_accuracy_mean": 0.8346938775510205,
+        "cv_accuracy_std": 0.04341017626330977,
+        "cv_precision_mean": 0.8313725490196079,
+        "cv_precision_std": 0.015560722030623123,
+        "cv_recall_mean": 0.8023715415019762,
+        "cv_recall_std": 0.10448547634323842,
+        "cv_roc_auc_mean": 0.8987826987826988,
+        "cv_roc_auc_std": 0.03303115000492188
+      },
+      "holdout_metrics": {
+        "accuracy": 0.9180327868852459,
+        "precision": 0.96,
+        "recall": 0.8571428571428571,
+        "roc_auc": 0.974025974025974
+      }
+    },
+    {
+      "model_name": "random_forest",
+      "best_params": {
+        "classifier__max_depth": 5,
+        "classifier__min_samples_leaf": 1,
+        "classifier__n_estimators": 200
+      },
+      "cv_metrics": {
+        "cv_accuracy_mean": 0.8138605442176872,
+        "cv_accuracy_std": 0.04961820310076321,
+        "cv_precision_mean": 0.8052175894281157,
+        "cv_precision_std": 0.046380909650002224,
+        "cv_recall_mean": 0.7845849802371542,
+        "cv_recall_std": 0.08512259424790085,
+        "cv_roc_auc_mean": 0.898376744028918,
+        "cv_roc_auc_std": 0.0461481758011897
+      },
+      "holdout_metrics": {
+        "accuracy": 0.9016393442622951,
+        "precision": 0.9583333333333334,
+        "recall": 0.8214285714285714,
+        "roc_auc": 0.9653679653679654
+      }
+    }
+  ],
+  "model_path": "artifacts\\heart_disease_model.joblib"
+}

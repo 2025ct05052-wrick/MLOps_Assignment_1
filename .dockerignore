@@ -1,0 +1,16 @@
+.git
+.github
+.venv
+__pycache__
+.pytest_cache
+.ruff_cache
+tmp
+mlruns
+artifacts/*
+!artifacts/heart_disease_model.joblib
+docs
+reports
+heart+disease
+heart+disease.zip
+MLOps Assignment 01 2026.pdf
+

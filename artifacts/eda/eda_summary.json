@@ -1,0 +1,201 @@
+{
+  "artifacts": {
+    "class_balance": "C:\\Users\\wrick\\OneDrive - wilp.bits-pilani.ac.in\\MLOPS_Assignment_1\\artifacts\\eda\\class_balance.png",
+    "correlation": "C:\\Users\\wrick\\OneDrive - wilp.bits-pilani.ac.in\\MLOPS_Assignment_1\\artifacts\\eda\\correlation_heatmap.png",
+    "distributions": "C:\\Users\\wrick\\OneDrive - wilp.bits-pilani.ac.in\\MLOPS_Assignment_1\\artifacts\\eda\\feature_distributions.png",
+    "missingness": "C:\\Users\\wrick\\OneDrive - wilp.bits-pilani.ac.in\\MLOPS_Assignment_1\\artifacts\\eda\\missingness.png"
+  },
+  "clean_data": {
+    "columns": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps",
+      "chol",
+      "fbs",
+      "restecg",
+      "thalach",
+      "exang",
+      "oldpeak",
+      "slope",
+      "ca",
+      "thal",
+      "target"
+    ],
+    "duplicate_rows": 0,
+    "heart_disease_prevalence": 0.45874587458745875,
+    "numeric_descriptives": {
+      "age": {
+        "count": 303,
+        "max": 77.0,
+        "mean": 54.43894389438944,
+        "median": 56.0,
+        "min": 29.0,
+        "std": 9.038662442446746
+      },
+      "ca": {
+        "count": 299,
+        "max": 3.0,
+        "mean": 0.6722408026755853,
+        "median": 0.0,
+        "min": 0.0,
+        "std": 0.9374383177242163
+      },
+      "chol": {
+        "count": 303,
+        "max": 564.0,
+        "mean": 246.69306930693068,
+        "median": 241.0,
+        "min": 126.0,
+        "std": 51.77691754263704
+      },
+      "cp": {
+        "count": 303,
+        "max": 4.0,
+        "mean": 3.1584158415841586,
+        "median": 3.0,
+        "min": 1.0,
+        "std": 0.9601256119600138
+      },
+      "exang": {
+        "count": 303,
+        "max": 1.0,
+        "mean": 0.32673267326732675,
+        "median": 0.0,
+        "min": 0.0,
+        "std": 0.46979446452231655
+      },
+      "fbs": {
+        "count": 303,
+        "max": 1.0,
+        "mean": 0.1485148514851485,
+        "median": 0.0,
+        "min": 0.0,
+        "std": 0.35619787492797644
+      },
+      "oldpeak": {
+        "count": 303,
+        "max": 6.2,
+        "mean": 1.0396039603960396,
+        "median": 0.8,
+        "min": 0.0,
+        "std": 1.1610750220686348
+      },
+      "restecg": {
+        "count": 303,
+        "max": 2.0,
+        "mean": 0.9900990099009901,
+        "median": 1.0,
+        "min": 0.0,
+        "std": 0.9949712915251782
+      },
+      "sex": {
+        "count": 303,
+        "max": 1.0,
+        "mean": 0.6798679867986799,
+        "median": 1.0,
+        "min": 0.0,
+        "std": 0.46729882777012993
+      },
+      "slope": {
+        "count": 303,
+        "max": 3.0,
+        "mean": 1.6006600660066006,
+        "median": 2.0,
+        "min": 1.0,
+        "std": 0.6162261453459619
+      },
+      "target": {
+        "count": 303,
+        "max": 1.0,
+        "mean": 0.45874587458745875,
+        "median": 0.0,
+        "min": 0.0,
+        "std": 0.4991195009875263
+      },
+      "thal": {
+        "count": 301,
+        "max": 7.0,
+        "mean": 4.73421926910299,
+        "median": 3.0,
+        "min": 3.0,
+        "std": 1.939705769378644
+      },
+      "thalach": {
+        "count": 303,
+        "max": 202.0,
+        "mean": 149.6072607260726,
+        "median": 153.0,
+        "min": 71.0,
+        "std": 22.875003276980376
+      },
+      "trestbps": {
+        "count": 303,
+        "max": 200.0,
+        "mean": 131.68976897689768,
+        "median": 130.0,
+        "min": 94.0,
+        "std": 17.59974772958769
+      }
+    },
+    "rows": 303,
+    "target_correlations": {
+      "age": 0.2231202946904511,
+      "ca": 0.46044249947126253,
+      "chol": 0.0851636113995312,
+      "cp": 0.41444638790514166,
+      "exang": 0.4318939871885015,
+      "fbs": 0.025263666975726125,
+      "oldpeak": 0.424510183341661,
+      "restecg": 0.16920188657375604,
+      "sex": 0.2768163163920976,
+      "slope": 0.33921315948366715,
+      "thal": 0.5256893063936517,
+      "thalach": -0.4171668769579602,
+      "trestbps": 0.1508254495945063
+    },
+    "target_distribution": {
+      "0": 164,
+      "1": 139
+    }
+  },
+  "generated_at_utc": "2026-10-10T18:17:02.680355+00:00",
+  "source": {
+    "missing_values_by_column": {
+      "age": 0,
+      "ca": 4,
+      "chol": 0,
+      "cp": 0,
+      "diagnosis": 0,
+      "exang": 0,
+      "fbs": 0,
+      "oldpeak": 0,
+      "restecg": 0,
+      "sex": 0,
+      "slope": 0,
+      "thal": 2,
+      "thalach": 0,
+      "trestbps": 0
+    },
+    "path": "C:\\Users\\wrick\\OneDrive - wilp.bits-pilani.ac.in\\MLOPS_Assignment_1\\data\\raw\\processed.cleveland.data",
+    "raw_columns": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps",
+      "chol",
+      "fbs",
+      "restecg",
+      "thalach",
+      "exang",
+      "oldpeak",
+      "slope",
+      "ca",
+      "thal",
+      "diagnosis"
+    ],
+    "raw_duplicate_rows": 0,
+    "raw_rows": 303,
+    "total_missing_values": 6
+  }
+}

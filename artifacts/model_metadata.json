@@ -1,0 +1,23 @@
+{
+  "model_name": "logistic_regression",
+  "best_params": {
+    "classifier__C": 0.3
+  },
+  "feature_names": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "training_rows": 303,
+  "trained_at_utc": "2026-10-10T18:27:50.322154+00:00"
+}

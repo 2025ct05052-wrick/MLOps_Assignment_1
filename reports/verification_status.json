@@ -1,0 +1,11 @@
+{
+  "ruff": "Passed (ruff check src app scripts tests)",
+  "pytest": "Passed (7 tests)",
+  "training": "Passed (full 5-fold comparison; Logistic Regression selected)",
+  "api": "Passed (uvicorn /health and sample /predict)",
+  "report_pdf": "Passed (10 pages; rendered and visually reviewed)",
+  "report_docx": "Generated (not visually rendered: LibreOffice unavailable)",
+  "docker": "Passed (Docker Compose build; API /health, /predict, /metrics; Prometheus target UP)",
+  "kubernetes": "Passed (Docker Desktop Kind; 2/2 replicas Ready; /health, /predict, and /metrics HTTP 200 verified via kubectl port-forward)",
+  "github_ci": "Pending (first workflow run starts after the initial push)"
+}

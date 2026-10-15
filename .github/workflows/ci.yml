@@ -1,0 +1,40 @@
+name: MLOps CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  quality-training:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Lint
+        run: ruff check src app scripts tests
+      - name: Unit and API tests
+        run: python -m pytest
+      - name: Train and log experiment artifacts
+        run: python scripts/train.py --data-path data/raw/processed.cleveland.data --output-dir artifacts --tracking-uri file:./mlruns --fast
+      - name: Upload training outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mlops-training
+          path: |
+            artifacts/
+            mlruns/
+          if-no-files-found: warn
+
