@@ -13,6 +13,7 @@ docs/screenshots/*
 !docs/screenshots/prometheus-target-up.png
 !docs/screenshots/grafana-heart-disease-dashboard.png
 !docs/screenshots/kubernetes-verification.png
+!docs/screenshots/github-actions-ci-passed.png
 tmp/
 .env
 .DS_Store

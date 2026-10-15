@@ -7,5 +7,6 @@ These screenshots were captured from the actual local Docker Desktop demo:
 - `kubernetes-verification.png` — two ready API pods and successful `/health`, `/predict`,
   and `/metrics` checks through `kubectl port-forward`.
 
-Add a screenshot of the passing GitHub Actions workflow after the first push.
+The first GitHub Actions run for commit `258ec97` passed. Capture its completed run
+page as `github-actions-ci-passed.png` before final submission.
 

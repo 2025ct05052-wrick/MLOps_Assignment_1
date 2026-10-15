@@ -471,8 +471,9 @@ def build():
         p("python -m pytest", "ReportCode"),
         p("python scripts/train.py --fast", "ReportCode"),
         p(
-            f"Current GitHub Actions status: {VERIFICATION.get('github_ci', 'Not run')}. The workflow run "
-            "page is the evidence for the remote result; save its screenshot after completion.",
+            f"Current GitHub Actions status: {VERIFICATION.get('github_ci', 'Not run')}. "
+            "Capture the completed first run page as "
+            "docs/screenshots/github-actions-ci-passed.png before submission.",
             "ReportSmall",
         ),
         PageBreak(),

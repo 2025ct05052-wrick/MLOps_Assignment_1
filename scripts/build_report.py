@@ -614,8 +614,9 @@ def build() -> Path:
         style_run(paragraph.add_run(command), size=9, color="263238", name="Consolas")
     add_paragraph(
         document,
-        f"Current GitHub Actions status: {verification.get('github_ci', 'Not run')}. The workflow run "
-        "page is the evidence for the remote result; save its screenshot after completion.",
+        f"Current GitHub Actions status: {verification.get('github_ci', 'Not run')}. "
+        "Capture the completed first run page as "
+        "docs/screenshots/github-actions-ci-passed.png before submission.",
     )
 
     # Page 10: deployment, monitoring, scope, and references.
