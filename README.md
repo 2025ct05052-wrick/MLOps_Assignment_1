@@ -1,5 +1,7 @@
 # Heart Disease MLOps Project
 
+Repository: `MLOps_Assignment_1`
+
 An end-to-end, reproducible binary classification workflow using the processed
 Cleveland subset of the UCI Heart Disease dataset. The project covers data
 acquisition, exploratory analysis, two-model comparison, MLflow experiment
